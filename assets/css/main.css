@@ -2,13 +2,19 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
 :root {
-  --primary-color: #c37331;
+  /* --primary-color: #c37331; */
+  --primary-color: black;
+  --primary-color-light: white;
+  --button-box-shadow: box-shadow: rgba(0, 0, 0, 0.56) 0px 28px 70px 4px;;
   /* --primary-color: #49bf9d; */
 }
 /*
 	Portfolio - Rohan | Front-end Developer 
 	https://github.com/rohanKumr
 */
+* {
+  transition: 1s ease-in;
+}
 
 html {
   scroll-behavior: smooth;
@@ -2178,6 +2184,7 @@ input[type="radio"] + label:before {
 
 .image.thumb {
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 28px 70px 4px;
 }
 
 .image.thumb:after {
@@ -2725,6 +2732,7 @@ input[type="button"]:disabled,
   text-align: right;
   top: 0;
   width: 35%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 #header > * {
@@ -3348,6 +3356,12 @@ body.is-touch .poptrox-popup .closer {
   list-style-type: none;
   margin: 1.5em 0 0 0;
 }
+.side-menu a {
+  color: var(--primary-color-light);
+}
+.side-menu a:hover {
+  color: #c3c3c3 !important;
+}
 
 .view-website {
   float: right;
@@ -3358,22 +3372,30 @@ body.is-touch .poptrox-popup .closer {
 .button {
   position: relative;
   overflow: hidden;
+  background: var(--primary-color);
+  color: var(--primary-color-light) !important;
+  /* opacity: 0.8; */
+
+}
+.button:hover {
+  color: var(--primary-color-light) !important;
 }
 
 .button::before {
   content: "";
   position: absolute;
-  background: #c3c3c3;
+  background: white;
   opacity: 0.2;
   height: 100%;
   width: 30%;
-  filter: blur(7px);
+  filter: blur(4px);
   margin-left: -40%;
   transform: skew(-30deg);
   animation: button-shine 2s ease-in-out infinite;
 }
 .button:hover::before {
-  background: var(--primary-color);
+  background: var(--primary-color-light);
+  box-shadow: var(--button-box-shadow);
 }
 
 @keyframes button-shine {
@@ -3383,36 +3405,33 @@ body.is-touch .poptrox-popup .closer {
   }
 }
 
-/* #header {
-  animation: slide-right 600ms ease-in-out;
+#main {
+  animation: slide-left 600ms ease-out;
 }
 
-@keyframes slide-right {
+#main {
+  transition: margin-left 600ms ease-out;
+}
+
+@keyframes slide-left {
   0% {
-    margin-left: -10px;
+    margin-left: 40%;
   }
-
-  100% {
-    margin-left: 0px;
-  }
-} */
-
-.projects-home h,
-.projects-home p,
-.projects-home div,
-.major {
-  animation: slide-up 1s ease;
 }
 
-.projects-home.h,
-.projects-home p,
-.projects-home div,
-.major {
-  transition: margin-top 1s ease 1s;
+#about li {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1000ms steps(40, end);
 }
 
-@keyframes slide-up {
-  0% {
-    margin-top: -2em;
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
