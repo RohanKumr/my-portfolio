@@ -3370,7 +3370,9 @@ body.is-touch .poptrox-popup .closer {
 .button {
   position: relative;
   overflow: hidden;
-  background: var(--primary-color);
+  background:url('../../images/bg.jpg');
+  background-size: cover;
+  background-position: bottom;
   color: var(--primary-color-light) !important;
   /* opacity: 0.8; */
 
