@@ -5,14 +5,13 @@
   /* --primary-color: #c37331; */
   --primary-color: black;
   --primary-color-light: white;
-  --button-box-shadow: box-shadow: rgba(0, 0, 0, 0.56) 0px 28px 70px 4px;;
+  --button-box-shadow: rgba(0, 0, 0, 0.56) 0px 4px 14px 4px;
   /* --primary-color: #49bf9d; */
 }
 /*
 	Portfolio - Rohan | Front-end Developer 
 	https://github.com/rohanKumr
 */
-
 
 html {
   scroll-behavior: smooth;
@@ -3370,12 +3369,13 @@ body.is-touch .poptrox-popup .closer {
 .button {
   position: relative;
   overflow: hidden;
-  background:url('../../images/bg.jpg');
+  /* background: url("../../images/fulls/01.jpg"), url("../../images/bg.jpg"); */
+  /* background: url("../../images/fulls/02.jpg"); */
+  background: url("../../images/bg.jpg");
   background-size: cover;
   background-position: bottom;
   color: var(--primary-color-light) !important;
-  /* opacity: 0.8; */
-
+  opacity: 0.8;
 }
 .button:hover {
   color: var(--primary-color-light) !important;
@@ -3395,7 +3395,6 @@ body.is-touch .poptrox-popup .closer {
 }
 .button:hover::before {
   background: var(--primary-color-light);
-  box-shadow: var(--button-box-shadow);
 }
 
 @keyframes button-shine {
@@ -3407,17 +3406,16 @@ body.is-touch .poptrox-popup .closer {
 
 @media screen and (min-width: 1280px) {
   #main {
-    margin-left:40%;
+    margin-left: 40%;
     animation: slide-left 600ms ease-out forwards;
   }
-  
+
   @keyframes slide-left {
     100% {
       margin-left: 35%;
     }
   }
 }
-
 
 #about li {
   font-weight: bold;
