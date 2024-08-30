@@ -12,9 +12,7 @@
 	Portfolio - Rohan | Front-end Developer 
 	https://github.com/rohanKumr
 */
-* {
-  transition: 1s ease-in;
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -3405,19 +3403,19 @@ body.is-touch .poptrox-popup .closer {
   }
 }
 
-#main {
-  animation: slide-left 600ms ease-out;
-}
-
-#main {
-  transition: margin-left 600ms ease-out;
-}
-
-@keyframes slide-left {
-  0% {
-    margin-left: 40%;
+@media screen and (min-width: 1280px) {
+  #main {
+    margin-left:40%;
+    animation: slide-left 600ms ease-out forwards;
+  }
+  
+  @keyframes slide-left {
+    100% {
+      margin-left: 35%;
+    }
   }
 }
+
 
 #about li {
   font-weight: bold;
