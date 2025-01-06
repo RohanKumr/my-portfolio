@@ -1,11 +1,11 @@
-Portfolio - Rohan | Frontend Developer
-@rohanKumr
+Hi, I’m Rohan Kumar — a Frontend Developer based in Ontario, Canada. I specialize in creating beautiful, user-friendly web interfaces using React and JavaScript.
+Please e-mail me in case you'd like to reuse my portfolio. 
+
+Contact: 
+	sayheyrohan@gmail.com
+	https://github.com/rohanKumr
 
 Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
 	Icons:
 		Font Awesome (fontawesome.io)
 
@@ -16,6 +16,3 @@ Credits:
 	Other:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
-
-- Edited by @rohanKumr
-- https://github.com/rohanKumr
