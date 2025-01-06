@@ -1,4 +1,4 @@
-Portfolio - Rohan | Front-end Developer
+Portfolio - Rohan | Frontend Developer
 @rohanKumr
 
 Credits:
